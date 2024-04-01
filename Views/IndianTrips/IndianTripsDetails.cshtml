@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Trip.Models.IndianTrips>
+@{
+    ViewData["Title"] = "IndianTripsDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>IndianTripsDetails</h1>
+<div class="container">
+    <div class="row">
+        @foreach (var data in Model)
+        {
+        <div class="col-12">
+            <img src="https://traveltrip.blob.core.windows.net/tripimage/@data.fieldimage"/>
+            <audio controls>
+                <sourse src="https://traveltrip.blob.core.windows.net/songsfortrip/@data.fieldaudio" type="audio/mpeg"> 
+            </audio>
+            <h1 class="text-danger">@data.productName</h1>
+            <p>@data.productDesc</p>
+            <a href="IndianTrips">LEARN MORE</a>
+        </div>
+        }
+    </div>
+    
+</div>
+

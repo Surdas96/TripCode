@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Surdas\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Surdas\\.nuget\\packages"
+    ]
+  }
+}
